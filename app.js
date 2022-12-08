@@ -28,10 +28,10 @@ const fileFilter = (req, file, cb) => {
     cb(null, false);
   }
 };
-const feedRoutes = require("./routes/feed");
-const authRoutes = require("./routes/auth");
 
 dotenv.config();
+const feedRoutes = require("./routes/feed");
+const authRoutes = require("./routes/auth");
 
 app.use(bodyParser.json());
 app.use(
